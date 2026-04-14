@@ -1,0 +1,14 @@
+ultralytics
+deep-sort-realtime
+opencv-python
+numpy
+torch
+torchvision
+pyyaml
+pandas
+scipy
+fastapi
+uvicorn
+scikit-learn
+statsmodels
+ortools
