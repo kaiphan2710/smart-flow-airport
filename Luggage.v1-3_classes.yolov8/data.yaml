@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['backpack', 'handbag', 'suitcase']
+
+roboflow:
+  workspace: isabelle-cai
+  project: luggage
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/isabelle-cai/luggage/dataset/1

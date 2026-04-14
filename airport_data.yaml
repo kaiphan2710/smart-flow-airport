@@ -1,0 +1,11 @@
+# Đường dẫn tuyệt đối hoặc tương đối tới thư mục chứa data của bạn
+path: ./datasets/airport_data 
+train: images/train  # thư mục chứa ảnh train
+val: images/val      # thư mục chứa ảnh validation (để đánh giá model)
+
+# Các class mà bạn muốn model học
+names:
+  0: Person
+  1: Backpack
+  2: Carry-on
+  3: Check-in luggage
