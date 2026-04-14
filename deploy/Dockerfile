@@ -2,15 +2,16 @@
 FROM python:3.10-slim
 
 # Set environment variables to prevent Python from writing pyc files and buffering stdout/stderr
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 # Set the working directory in the container
 WORKDIR /app
 
 # Install system dependencies (e.g., for OpenCV and OR-Tools)
+# CHANGED: libgl1-mesa-glx -> libgl1
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libgl1-mesa-glx \
+    libgl1 \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 

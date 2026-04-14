@@ -1,0 +1,7 @@
+path: /Users/kaiphan/smart-flow-airport/datasets/luggage
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 3
+names: ['backpack', 'handbag', 'suitcase']
